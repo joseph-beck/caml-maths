@@ -2,7 +2,7 @@ open Stdio
 open Token
 
 let print_prompt () =
-  printf "|> ";
+  printf "> ";
   Out_channel.flush stdout
 
 let rec repl () =

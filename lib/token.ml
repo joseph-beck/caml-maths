@@ -30,13 +30,13 @@ let get_tokens str =
   List.rev reversed
 
 let token_to_str = function
-  | Token_number value -> Printf.sprintf "Token[type: number, val %d]" value
-  | Token_lbracket -> "Token[type: lbracket, val: (]"
-  | Token_rbracket -> "Token[type: rbracket, val: )]"
-  | Token_plus -> "Token[type: plus, val: +]"
-  | Token_minus -> "Token[type: minus, val: -]"
-  | Token_multiply -> "Token[type: multiply, val: *]"
-  | Token_divide -> "Token[type: divide, val: /]"
+  | Token_number value -> Printf.sprintf "Token {type: number, val %d}" value
+  | Token_lbracket -> "Token {type: lbracket, val: (}"
+  | Token_rbracket -> "Token {type: rbracket, val: )}"
+  | Token_plus -> "Token {type: plus, val: +}"
+  | Token_minus -> "Token {type: minus, val: -}"
+  | Token_multiply -> "Token {type: multiply, val: *}"
+  | Token_divide -> "Token {type: divide, val: /}"
 
 let print_token token = printf "%s\n" (token_to_str token)
 
