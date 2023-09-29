@@ -1,0 +1,3 @@
+(library
+ (name mathsparser)
+ (libraries base stdio))

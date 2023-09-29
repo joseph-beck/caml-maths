@@ -1,0 +1,4 @@
+(executable
+ (public_name mathsparser)
+ (name main)
+ (libraries base stdio mathsparser))
