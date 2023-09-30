@@ -40,11 +40,9 @@ let token_to_str = function
 
 let print_token token = printf "%s\n" (token_to_str token)
 
-let rec print_tokens_rec tokens =
+let rec print_tokens tokens =
   match tokens with
   | [] -> ()
   | token :: rest ->
       print_token token;
-      print_tokens_rec rest
-
-let print_tokens tokens = print_tokens_rec tokens
+      print_tokens rest

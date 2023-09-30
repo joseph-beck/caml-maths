@@ -12,5 +12,5 @@ let rec repl () =
   | None -> printf "error reading line"
   | Some str ->
       let tokens = get_tokens str in
-      print_tokens tokens;
+      print_tokens_rec tokens;
       repl ()
